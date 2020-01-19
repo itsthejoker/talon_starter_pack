@@ -109,7 +109,7 @@ volume down: key(volume_down)
 mute: key(mute)
 play next: key(next)
 play previous: key(previous)
-(play | pause): key(space), # spotify
+(play | pause): key(space)
 wipe: key(backspace)
 (pad | padding ):
     insert("  ")
@@ -118,4 +118,5 @@ funny: "ha ha"
 menubar: key(ctrl-f2)
 status menu: key(ctrl-f8)
 my doc: key(ctrl-f3)
-copy [app] bundle: clip.set(app.bundle())
+copy [app] bundle:
+    clip.set(app.bundle())
