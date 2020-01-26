@@ -46,7 +46,6 @@ def replace_words(words, count):
     while i < len(words) - count + 1:
         phrase = words[i : i + count]
         key = " ".join(phrase)
-        print("Key: ", key)
         if key in mapping:
             new_words.append(mapping[key])
             i = i + count
